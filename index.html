@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxílio Prova</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Algumas informações e Códigos úteis na prova</h1>
+    <hr>
+    <p> Compensação dos impostos: <br>
+        
+            Gera um balancete, pega as contas que tiverem o menor saldo e lança o valor da conta. <br>
+        Se o maior saldo for ICMS a recolher, PIS a recolher, Cofins a recolher: <br><br>
+        
+        172 | D - ICMS a recolher		(Valor do ICMS a recuperar no balancete)<br>
+        30 &nbsp | C - ICMS a recuperar<br>
+        179 | D - PIS a recolher		(Valor do PIS a recuperar no balancete)<br>
+        41  &nbsp | C - PIS a recuperar <br>
+        180 | D - Cofins a recolher		(Valor do Cofins a recuperar no balancete)<br>
+        40 &nbsp | C - Cofins a recuperar<br>
+        
+        A conta a recolher tem saldo no crédito, e a conta a recuperar tem saldo no débito. Para zerar uma das contas precisa fazer o lançamentro contrário.
+    <hr>
+        Zeramento das contas de Despesa e Resultado:<br>
+            
+            Para apurar o resultado do exercício, devemos zerar as contas de resultado e despesas, fazer uma espécie de ARE no sistema. <br>
+        Para fazer o zeramento, se credita as despesas e debita as receitas utilizando a conta 473 - Resultado do Exercício. <br>
+        Em Relatórios > Demonstrativos > DRE você consegue ter uma prova real do valor final que deverá ser composto o Lucro ou prejuízo do exercício. <br><br>
+        
+        As receitas são debitadas e no crédito vai a conta 473<br>
+        As despesas são creditadas e no débito vai a conta 473<br><br>
+        
+        Lançamentos Despesa: <br><br>
+        
+        473 | D - Resultado do exercício (Soma os valores das contas de despesa e lança o valor total)<br>
+        331 | C - Despesa com salários e ordenados<br>
+        332 | C - Despesas Pró-labore<br>
+        334 | C - 13º Salário<br>
+        335 | C - Férias<br>
+        336 | C - INSS<br>
+        337 | C - FGTS<br>
+        354 | C - Energia Elétrica<br>
+        356 | C - Telefone<br>
+        359 | C - Mat de escritório<br>
+        360 | C - Mat Higiene e Limpeza<br><br>
+        
+        Lançamento CMV:<br><br>
+        
+        473 | D - Resultado do Exercício <br>
+        470 | C - CMV<br><br>
+        
+        Lançamento Receitas:<br><br>
+        
+        408 | D - Receita de venda de mercadoria<br>
+        473 | C - Resultado do Exercício <br><br>
+        
+        Lançamento Deduções (ICMS, Pis e Cofins s/Vendas)<br><br>
+        
+        473 | D - Resultado do Exercício (Soma dos valores das contas no crédito, lança o valor total)<br>
+        426 | C - ICMS s/Vendas<br>
+        429 | C - PIS s/Vendas<br>
+        428 | C - Cofins s/Vendas<br>
+       
+        
+        Assim, se você fez tudo certo, a conta 473 - Resultado do Exercício deve bater com o valor da DRE que você gerou antes e as contas sintéticas 3, 4 & 5 devem estar zeradas.<br>
+        Agora, precisa lançar o valor da conta 473 como lucro ou prejuízo do Exercício:<br><br>
+        <hr>
+        <br>
+        Preju<br>
+        <br>
+        267 | D - Prejuízo acumulado <br>
+        473 | C - Resultado do Exercício<br>
+        <br>
+        Lucro<br>
+        <br>
+        473 | D - Resultado do Exercício<br>
+        266 | C - Lucro acumulado</p>
+</body>
+</html>
